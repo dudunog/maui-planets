@@ -32,4 +32,7 @@ public partial class StartPage : ContentPage
         // Commit the animation
         parentAnimation.Commit(this, "TransitionAnimation", 16, 3000, null, null);
     }
+
+    void ExploreNow_Clicked(object sender, EventArgs e)
+        => Application.Current.MainPage = new NavigationPage(new PlanetsPage());
 }
